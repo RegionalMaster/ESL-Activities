@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ESL Teaching Resource Hub - Activities and Games for English Conversation Classes">
+    <meta name="keywords" content="ESL activities, English games, conversation practice, English teaching resources">
+    <title>ESL Activity Hub - Teaching Resources</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">ESL Activity Hub</div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#topics">Topics</a>
+                <a href="#activities">Activities</a>
+                <a href="#favorites">Favorites</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>English Conversation Activities & Games</h1>
+                <p>A comprehensive collection of engaging activities, games, and resources for English conversation classes.</p>
+                <div class="hero-buttons">
+                    <a href="#topics" class="btn btn-primary">Browse Topics</a>
+                    <a href="#activities" class="btn btn-secondary">View Activities</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section id="topics" class="topics-section">
+            <div class="container">
+                <h2>Popular Topics</h2>
+                <div class="topics-grid">
+                    <!-- Topic cards will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities" class="activities-section">
+            <div class="container">
+                <h2>Featured Activities</h2>
+                <div class="activities-filters">
+                    <select id="ageGroup">
+                        <option value="all">All Ages</option>
+                        <option value="young">Young Learners (5-10)</option>
+                        <option value="teen">Teenagers (11-16)</option>
+                        <option value="adult">Adults (17+)</option>
+                    </select>
+                    <select id="activityType">
+                        <option value="all">All Types</option>
+                        <option value="game">Games</option>
+                        <option value="conversation">Conversation</option>
+                        <option value="roleplay">Role-play</option>
+                        <option value="group">Group Activities</option>
+                    </select>
+                    <select id="difficulty">
+                        <option value="all">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <div class="activities-grid">
+                    <!-- Activity cards will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorites Section -->
+        <section id="favorites" class="favorites-section">
+            <div class="container">
+                <h2>My Saved Activities</h2>
+                <div class="favorites-grid">
+                    <!-- Saved activities will be displayed here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ESL Activity Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
