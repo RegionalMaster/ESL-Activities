@@ -2050,7 +2050,7 @@ function loadActivities(filters = {}) {
     }
 
     activitiesGrid.innerHTML = filteredActivities.map(activity => `
-        <div class="activity-card" data-activity-id="${activity.id}">
+        <div class="activity-card" data-activity-id="${activity.id}" onclick="navigateToActivity(event, '${activity.title.toLowerCase().replace(/\s+/g, '-')}')" style="cursor: pointer;">
             <h3>${activity.title}</h3>
             <p>${activity.description}</p>
             <div class="activity-meta">
@@ -2068,7 +2068,7 @@ function loadActivities(filters = {}) {
                     ${activity.instructions.map(i => `<li>${i}</li>`).join('')}
                 </ol>
             </div>
-            <button class="btn-favorite" onclick="toggleFavorite(${activity.id})">
+            <button class="btn-favorite" onclick="toggleFavorite(${activity.id}); event.stopPropagation();">
                 ${isFavorite(activity.id) ? '❤️' : '🤍'}
             </button>
         </div>
@@ -2098,6 +2098,13 @@ function setupFilters() {
 function filterByTopic(topicId) {
     loadActivities({ topicId });
     document.getElementById('activities').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Function to navigate to activity page
+function navigateToActivity(event, activitySlug) {
+    if (!event.target.classList.contains('btn-favorite')) {
+        window.location.href = `activities/${activitySlug}.html`;
+    }
 }
 
 // Favorites functionality

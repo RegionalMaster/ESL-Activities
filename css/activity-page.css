@@ -1,0 +1,187 @@
+/* Activity Page Styles */
+.activity-page {
+    padding: 2rem 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.activity-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.activity-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.activity-meta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tag {
+    background: #f0f0f0;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+section {
+    margin-bottom: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Menu Templates */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.menu-template {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.menu-template h4 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+.menu-section {
+    margin-bottom: 1.5rem;
+}
+
+.menu-section h5 {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+}
+
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Props Section */
+.props-list {
+    list-style: none;
+    padding: 0;
+}
+
+.props-list > li {
+    margin-bottom: 1.5rem;
+}
+
+.props-list ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.props-list li li {
+    margin-bottom: 0.3rem;
+    color: #555;
+}
+
+/* Scenarios */
+.scenario {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.scenario h3 {
+    color: #444;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.dialogue {
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dialogue p {
+    margin-bottom: 0.8rem;
+}
+
+.dialogue strong {
+    color: #007bff;
+}
+
+/* Vocabulary Grid */
+.vocabulary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.vocab-category h3 {
+    color: #444;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.vocab-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vocab-category li {
+    margin-bottom: 0.5rem;
+    color: #555;
+    padding: 0.5rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Teaching Tips */
+.activity-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-tips li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.activity-tips li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+}
